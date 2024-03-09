@@ -1,0 +1,25 @@
+/*
+Copyright (c) 2024 Diagrid Inc.
+Licensed under the MIT License.
+*/
+
+syntax = "proto3";
+
+package proto.cron.v1alpha1;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "github.com/diagridio/go-etcd-cron/grpc/cron/v1alpha1;cron";
+
+service Cron {
+  rpc MyCoolCron (MyCoolCronRequest) returns (MyCoolCronResponse) {}
+}
+
+message MyCoolCronRequest {
+  string id = 1;
+}
+
+message MyCoolCronResponse {
+  string id = 1;
+  google.protobuf.Timestamp timestamp = 2;
+}
