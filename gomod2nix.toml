@@ -56,11 +56,11 @@ schema = 3
     version = "v0.0.0-20240304212257-790db918fca8"
     hash = "sha256-CgxPwcl7SfF+BLzoP9ICHIHUyAN7sAFndTCn2NnIjQw="
   [mod."google.golang.org/genproto/googleapis/rpc"]
-    version = "v0.0.0-20240304212257-790db918fca8"
+    version = "v0.0.0-20240228224816-df926f6c8641"
     hash = "sha256-V2CfmnTb92os4IGejBvk5mNaINarJQYqrG0fU/WrCbE="
   [mod."google.golang.org/grpc"]
-    version = "v1.62.1"
-    hash = "sha256-1su6X0YT7MUflrTJijbq1CiisADZHudEx5sJq01TEaE="
+    version = "v1.62.0"
+    hash = "sha256-OnEEt6J1d9uQazORCpD6jbAKph8/dKlDHcUEEkLQyjQ="
   [mod."google.golang.org/protobuf"]
     version = "v1.33.0"
     hash = "sha256-cWwQjtUwSIEkAlAadrlxK1PYZXTRrV4NKzt7xDpJgIU="

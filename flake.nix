@@ -21,10 +21,12 @@
   in utils.lib.eachSystem targetSystems (system:
     let
       overlays = [ gomod2nix.overlays.default ];
-
       pkgs = import nixpkgs { inherit system overlays; };
+      src = lib.sourceFilesBySuffices ./. [
+        ".go" ".mod" ".sum" ".proto" ".toml"
+      ];
 
-      ci = import ./nix/ci.nix { inherit pkgs; };
+      ci = import ./nix/ci.nix { inherit src pkgs; };
 
     in {
       apps = ci.apps;
